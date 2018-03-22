@@ -270,9 +270,9 @@ img {
   top: 0;
   width: 255px;
   height: 282px;
-  border: 10px solid royalblue;
-  background-color: rebeccapurple;
-  opacity: 0.5;
+  border: 10px solid rgba(255, 255, 255, 1);
+  background-color: rgba(50, 50, 50, 0.8);
+  opacity: 0;
 }
 
 .card-buttons-list {
@@ -314,7 +314,7 @@ img {
   margin-right: 0;
 }
 
-.cart-button {
+.buy-button {
   display: block;
   width: 166px;
   height: 50px;
@@ -323,17 +323,54 @@ img {
   background-color: #323232;
 }
 
-.basket-ico {
+.cart-ico-wrapper {
+  position: relative;
+  display: block;
   float: left;
+  width: 49px;
+  height: 48px;
 }
 
-.cart-button-content {
-  display: block;
+.cart-ico {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buy-button-describe {
   float: right;
+  width: 115px;
+  height: 48px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  line-height: 48px;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.collection-list-item:hover .overlay {
+  opacity: 1;
+}
+
+.collection-list-item:hover .item-name {
+  background-color: #1abc9c;
+}
+
+.collection-list-item:hover .item-price {
+  background-color: #7fd9c7;
+}
+
+.card-buttons-list-item:hover {
+  background-color: #1abc9c;
+}
+
+.buy-button:hover {
+  background-color: #1abc9c;
 }
 
 /* FOOTER */
