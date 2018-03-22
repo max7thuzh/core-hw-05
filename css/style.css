@@ -1,0 +1,374 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.main-navigation {
+  padding: 30px 0;
+}
+
+/* LOGO */
+
+.main-logo {
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #555252;
+}
+
+.main-logo::first-letter {
+  font-weight: 900;
+  color: #1abc9c;
+}
+
+/* MENU */
+
+.main-menu {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu-item {
+  float: left;
+}
+
+.main-menu-item .main-menu-item-active {
+  color: #1abc9c;
+}
+
+.main-menu-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.main-menu-item a {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0f0101;
+}
+
+.main-menu-item a:hover,
+.main-menu-item a:focus {
+  text-shadow: 1px 1px 1px #212121;
+}
+
+/* SLIDER SECTION */
+
+.slider-background {
+  height: 600px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
+  url("https://lh3.googleusercontent.com/33FWaVO_vJ1tDDYHP4TO9E9dScBxauSf2OrAxy9A3o-PgZS49WOdwI334g7kBWSWcVAZWlGIGPiFEUwuOTmp0AioveHFgQzptdLX7kLJacsRFtWmHjYqL_iYtkVmLEKK8uQtGw2GlfEukSC-7HIvmthi4JvzSbBv_W2I5hRriByp27OLeRg_fiQobylu_l4M-OvoDDTQc0P2jnyEwaAqkbj_kofXELSXW_L1cFba28xquiLEu2nGeDx6A2XRw-QcQkvq4PlZJmPUvMZO4hH0u74GZGIxuSlf62bmWUnSECCfh77VqWVSrsxt4TmLH_qCqr3xpTMU383s6sUXzOQ2GhjNMq7LqLTGVx0LCu1yFSvUxrALJm6K4ZtEIFedjz8PuDPJJ3B2GY_1COgvW2WNjRLB7wDqkniLf7AEzmISsvbCCMoss0qkzmwMkVwfwIw0zB3Zu_fpJloJb9Dhm2prHNczmEKrgNzsbbYGaaODNj6f920y6KxuQ9Gw8GKl0292LWT3Y9lgmVgXkkKeFUc8sPPqcqcOj1-aiUMcjiUfSdjdAjqgmrz-x5F8lH5d83Xuk7Ggpkw3E9f3Rmnwk4g2Uz1w43iBmYhYrc8YPoU=w1440-h540-no");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slider {
+  position: relative;
+  width: 1110px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 104px;
+  height: 104px;
+  padding: 0;
+  border: none;
+  background-color: #1abc9c;
+  z-index: 1;
+}
+
+.slider-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.slider-button-prev {
+  left: 0;
+}
+
+.slider-button-next {
+  right: 0;
+}
+
+.slider-button-image {
+  margin: auto;
+}
+
+.slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slides-item {
+  position: relative;
+  height: 600px;
+}
+
+.slider-title {
+  position: absolute;
+  left: 186px;
+  top: 220px;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider-description {
+  position: absolute;
+  left: 186px;
+  top: 300px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider-title,
+.slider-description {
+  margin: 0;
+}
+
+/* COLLECTION SECTION */
+
+.collection {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e9f0fd;
+}
+
+.collection-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: #515151;
+}
+
+.collection-title::after {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  content: "";
+}
+
+.collection-title-content {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+/* COLLECTION LIST */
+
+.collection-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.collection-list-item {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 255px;
+  height: 322px;
+}
+
+.collection-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.collection-list-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.card {
+  position: relative;
+}
+
+.item-describe {
+  position: absolute;
+  bottom: 0;
+}
+
+.item-name {
+  float: left;
+  width: 200px;
+  background-color: #323232;
+}
+
+.item-price {
+  float: right;
+  width: 55px;
+  background-color: #8c8c8c;
+}
+
+.item-name,
+.item-price {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 13px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  width: 255px;
+  height: 282px;
+  border: 10px solid royalblue;
+  background-color: rebeccapurple;
+  opacity: 0.5;
+}
+
+.card-buttons-list {
+  padding: 0;
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.card-buttons {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.list-button {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.list-button-ico {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-buttons-list-item {
+  float: left;
+  margin-right: 8px;
+}
+
+.card-buttons-list-item:last-child {
+  margin-right: 0;
+}
+
+.cart-button {
+  display: block;
+  width: 166px;
+  height: 50px;
+  padding: 0;
+  border: 1px solid #ffffff;
+  background-color: #323232;
+}
+
+.basket-ico {
+  float: left;
+}
+
+.cart-button-content {
+  display: block;
+  float: right;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* FOOTER */
+
+.main-footer {
+  height: 100px;
+  text-align: center;
+  background-color: #323232;
+}
+
+.rights {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 100px;
+  color: #fefefe;
+}
+
+.themen-graph {
+  color: #46bfa9;
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
